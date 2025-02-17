@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/fonts/poppins-fonts.woff2);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --black-color: rgb(20, 20, 20);
+    --dark-grey-color: rgb(29, 29, 29);
+    --grey-color: rgb(45, 45, 45);
+    --white-text-color: rgb(255, 255, 255);
+    --accent-color: rgb(184, 209, 101);
+}
+
+body{
+    background-color: var(--black-color);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
