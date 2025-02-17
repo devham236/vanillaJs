@@ -16,6 +16,12 @@
 
 body{
     background-color: var(--black-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
 *{
@@ -23,5 +29,9 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', Arial, sans-serif;
+}
+
+.main-container{
+    background-color: var(--dark-grey-color);
 }
 
