@@ -72,6 +72,7 @@ body{
 .slogan{
     color: var(--grey-text-color);
     margin-bottom: 1rem;
+    font-size: 0.8rem;
 }
 
 .social-links .link{
@@ -80,7 +81,7 @@ body{
     background-color: var(--grey-background-color);
     padding: 0.5rem 0;
     color: var(--white-text-color);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 1px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -91,3 +92,6 @@ body{
     margin-bottom: 0;
 }
 
+@media screen and (min-width: 1000px) {
+    
+}
