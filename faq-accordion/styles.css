@@ -3,6 +3,7 @@
     --purple-accent: rgb(150, 49, 228);
     --text-color: rgb(43, 26, 48);
     --rose-color: rgb(245, 236, 254);
+    --container-color: rgb(255, 255, 255);
 }
 
 @font-face {
@@ -43,11 +44,19 @@
     font-family: 'Poppins', Arial, sans-serif;
 }
 
+ul li{
+    list-style: none;
+}
+
 .main-container{
     width: 100vw;
     height: 100vh;
     background-color: var(--rose-color);
     position: relative;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-container::before{
@@ -58,4 +67,57 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.content-container{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--container-color);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.content-container .title-icon{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.content-container .title-icon span{
+    color: var(--purple-accent);
+    font-size: 1.8rem;
+}
+
+.content-container .title-icon *:not(:last-child){
+    margin-right: 0.5rem;
+}
+
+.faq-list .question-item{
+    padding: 0.5rem 0;
+}
+
+.faq-list .question-item:not(:last-child){
+    border-bottom: 1px solid #efefef;
+}
+
+.faq-list .question-item:last-child{
+    padding-bottom: 0;
+}
+
+.faq-list .question-item .question-icon{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+.faq-list .question-item .question-icon .question{
+    font-weight: 600;
+}
+
+.faq-list .question-item .answer{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.faq-list .question-item span{
+    color: var(--purple-accent);
 }
