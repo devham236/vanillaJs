@@ -121,7 +121,7 @@ ul li{
     opacity: 0.5;
 }
 
-.faq-list .question-item span{
+.faq-list .question-item .question-icon .toggle-icon{
     color: var(--purple-accent);
 }
 
