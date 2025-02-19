@@ -15,7 +15,6 @@ questionsAnswers.forEach((el) => {
 });
 
 const closeBtns = document.querySelectorAll(".toggle-icon");
-const answer = document.querySelectorAll(".answer");
 
 closeBtns.forEach((btn) => {
   btn.addEventListener("click", (el) => {
