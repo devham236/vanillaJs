@@ -108,7 +108,6 @@ ul li{
 .faq-list .question-item .question-icon{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 0.5rem;
     justify-content: space-between;
 }
 

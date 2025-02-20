@@ -2,15 +2,15 @@ import { questionsAnswers } from "./utils/questionAnswer.js";
 
 const faqList = document.querySelector(".faq-list");
 
-questionsAnswers.forEach((el) => {
-  faqList.innerHTML += `<li class="question-item" id=${el.id}>
+questionsAnswers.forEach(({ id, question, answer }) => {
+  faqList.innerHTML += `<li class="question-item" id=${id}>
                     <div class="question-icon">
-                        <p class="question">${el.question}</p>
+                        <p class="question">${question}</p>
                         <span class="material-symbols-rounded toggle-icon">
                             expand_circle_down
                         </span>
                     </div>
-                    <p class="answer closed">${el.answer}</p>
+                    <p class="answer closed">${answer}</p>
                 </li>`;
 });
 
